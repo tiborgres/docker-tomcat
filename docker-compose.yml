@@ -1,0 +1,10 @@
+version: "3"
+services:
+  posamtomcat:
+    build: ./
+    image: posamtomcat
+    ports:
+      - "8080:8080"
+    volumes:
+      - /opt/tomcat/conf:/usr/local/tomcat/conf
+      - /opt/tomcat/logs:/usr/local/tomcat/logs
